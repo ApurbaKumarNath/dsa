@@ -7,7 +7,7 @@
 ## Solution:
 ```py
 ''' hint:
-Byte size: str = 1, int & float = 4, Long & Double = 8
+Byte size: str = 1, int & float = 4, long & double = 8
 also check online as 32-bit and 64 bit matters
 '''
 ```

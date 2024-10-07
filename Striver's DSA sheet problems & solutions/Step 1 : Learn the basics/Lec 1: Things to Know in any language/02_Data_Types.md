@@ -5,7 +5,7 @@
 </table>
 
 ## Solution:
-```
+```py
 class Solution:
     def dataTypeSize(self, str):
         if str == 'Character':

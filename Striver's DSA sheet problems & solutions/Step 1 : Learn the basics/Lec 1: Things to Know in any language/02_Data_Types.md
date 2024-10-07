@@ -6,6 +6,13 @@
 
 ## Solution:
 ```py
+''' hint:
+Byte size: str = 1, int & float = 4, Long & Double = 8
+also check online as 32-bit and 64 bit matters
+'''
+```
+
+```py
 class Solution:
     def dataTypeSize(self, str):
         if str == 'Character':

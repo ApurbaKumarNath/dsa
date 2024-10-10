@@ -674,7 +674,9 @@ def getStarPattern(n: int) -> None:
 <td>
   
 ```py
-
+# this solution is wrong for numbers greater than 9
+# it was hard for me to come up with this solution without taking any help
+# that's why I'm not removing it
 def getNumberPattern(n: int) -> None:
     save = ''
     full_save = []

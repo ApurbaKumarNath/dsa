@@ -580,11 +580,138 @@ def symmetry(n: int):
 def SameLines(line, n):
     for star in range(n - line + 1):
         print('*', end = ' ')
-    for space in range((n + 1)*(line - 1)):
+    for space in range(4*(line - 1)):
         print(' ', end = '')
     for star in range(n - line + 1):
         print('*', end = ' ')
     print()
+```
+
+</td>
+</table>
+
+## Question 20:
+<table align="center", height="300">
+  <td><img src = "https://github.com/user-attachments/assets/11f483b1-eba2-4685-9989-350f14e0da6e"/></td>
+</table>
+
+## Solution:
+<table align="center">
+<td>
+  
+```py
+
+'''
+for n = 3, 
+line = 1, star = 1, space = 8, star = 1
+line = 2, star = 2, space = 4, star = 2
+line = 3, star = 3, space = 0, star = 3
+
+here, line == star
+
+and, overall content in a line,
+n*4 = [spaces_with_stars + (star + star) + spaces]
+3*4 = [4 + (2 + 2) + 4] for line = 2
+so, spaces = 4*n - 2*star - spaces_with_stars
+    spaces = 4(n - line) {as line = 2*star + spaces_with_stars}
+'''
+
+def symmetry(n: int):
+    for line in range(1, n + 1):
+        SameLines(line, n)
+    for line in range(n - 1, 0, -1):
+        SameLines(line, n)
+        
+def SameLines(line, n):
+    for star in range(1, line + 1):
+        print('*', end = ' ')
+    for space in range(4*(n - line)):
+        print(' ', end = '')
+    for star in range(1, line + 1):
+        print('*', end = ' ')
+    print()
+        
+```
+
+</td>
+</table>
+
+## Question 21:
+<table align="center", height="300">
+  <td><img src = "https://github.com/user-attachments/assets/89507d2d-074b-4ab1-b59a-e5067363ebe6"/></td>
+</table>
+
+## Solution:
+<table align="center">
+<td>
+  
+```py
+
+def getStarPattern(n: int) -> None:
+    for line in range(1, n + 1):
+        if line == 1 or line == n:
+            for star in range(n):
+                print('*', end = '')
+
+        else:
+            print('*', end = '')
+            for space in range(n - 2):
+                print(' ', end = '')
+            print('*', end = '')
+        print()
+```
+
+</td>
+</table>
+
+## Question 22:
+<table align="center", height="300">
+  <td><img src = "https://github.com/user-attachments/assets/1bf9af6c-5b06-4230-803e-cd78daab53a8"/></td>
+</table>
+
+## Solution:
+<table align="center">
+<td>
+  
+```py
+
+def getNumberPattern(n: int) -> None:
+    save = ''
+    full_save = []
+    for line in range(1, n + 1):
+        for num in range(1, n + 1):
+            if num == line:
+                changed_num = f'{n - line + 1}'
+                save += changed_num
+                all_save = save
+            elif num > line:
+                all_save += changed_num
+        remaining = ''
+        for reverse in range(-2, -len(all_save)-1, -1):
+            remaining += all_save[reverse]
+        full_save.append(all_save + remaining)
+    temp = list(full_save)
+    for full_reverse in range(-2, -len(full_save)-1, -1):
+        full_save.append(temp[full_reverse])
+    for num in full_save:
+        print((num))
+```
+
+</td>
+
+<td>
+  
+```py
+
+def getNumberPattern(n: int) -> None:
+    for i in range(2*n - 1):
+        for j in range(2*n - 1):
+            top = i
+            left = j
+            right = 2*(n-1) - j
+            down = 2*(n-1) - i
+            print(n - min(min(top, down), min(left, right)), end = '')
+        print()
 ```
 
 </td>

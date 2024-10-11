@@ -119,7 +119,7 @@ class Solution:
   
 ```py
 class Solution:
-    def isPalindrome(self, x: int) -> bool:
+    def isPalindrome(self, x: int) -> bool:     
         if 0 <= x <= 9:
             return True
         if x < 0 or (x % 10 == 0):
@@ -148,8 +148,9 @@ class Solution:
 <table align="center">
   <td>
     <pre>
-    Armstrong Number problem example: 371 = $3^3$ + $7^3$ + $1^3$ => True
-    Example: 1634 != $1^3$ + $6^3$ +  $3^3$ + $4^3$ => False
+      Armstrong Number 
+      problem example: 371 = 3&sup3 + 7&sup3 + 1&sup3 => True
+      Example: 1634 = 1<sup>4</sup> + 6<sup>4</sup> + 3<sup>4</sup> + 4<sup>4</sup> => True
     </pre>
   </td>
 </table>
@@ -159,25 +160,21 @@ class Solution:
 <td>
   
 ```py
-class Solution:
-    def isPalindrome(self, x: int) -> bool:     
-        if 0 <= x <= 9:
-            return True
-        if x < 0 or (x % 10 == 0):
-            return False
-        else:
-            copy = x
-            rev = 0
-            while x > 0:
-                last_digit = x % 10 
-                rev = rev*10 + last_digit
-                if rev > (2**31) - 1:
-                    return False
-                x //= 10
-            if rev == copy:
-                return True
-            else:
-                return False
+num = int(input())
+count = 0
+copy1 = num
+copy2 = num
+while num > 0:
+    num //= 10
+    count += 1
+armstrong = 0
+while copy1 > 0:
+    armstrong += (copy1 % 10)**count
+    copy1 //= 10
+if armstrong == copy2:
+    print(True)
+else:
+    print(False)
 
 ```
 
@@ -197,8 +194,8 @@ class Solution:
 <td>
   
 ```py
-# from 1 to sqrt(num) => divisors and (num / divisors) == all divisors
-# Another thing ==> for finding prime numbers, loop till sqrt(N) 
+# from 1 to sqrt(num) => divisors and (num / divisors) == all divisors         
+# Another idea ==> for finding prime numbers, loop till sqrt(N) 
 class Solution:
     def sumOfDivisors(self, N):
         if 1 <= N < 10**6:
@@ -239,7 +236,7 @@ class Solution:
 </table>
 
 
-## Question 5:
+## Question 6:
 <table align="center">
   <td>
   <pre>

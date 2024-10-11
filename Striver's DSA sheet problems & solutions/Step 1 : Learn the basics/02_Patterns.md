@@ -409,7 +409,7 @@ def numberCrown(n: int) -> None:
     for line in range(1, n + 1):
         for num in range(1, line + 1):
             print(num, end = ' ')
-        for space in range(2*n - line):
+        for space in range(4*(n - line)):
             print(' ', end = '')
         for num in range(line, 0, -1):
             print(num, end = ' ')

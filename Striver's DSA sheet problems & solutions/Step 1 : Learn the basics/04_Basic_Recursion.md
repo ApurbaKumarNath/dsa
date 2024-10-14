@@ -112,3 +112,75 @@ class Solution:
 </td>
 
 </table>
+
+## Question 3:
+<table align="center", height="300">
+  <td width = 600><img src = "https://github.com/user-attachments/assets/12504dcd-66ce-4886-a238-3ab025ef4fd9"/></td>
+</table>
+
+## Solution:
+<table align="center">
+<td>
+
+```py
+# Without backtrack
+class Solution:
+    def sumOfSeries(self, n, summ = 0):
+        if n < 0:
+            print(summ)
+        else:
+            self.sumOfSeries(n - 1, summ + n**3)
+```
+</td>
+
+<td>
+
+```py
+# Using backtrack
+class Solution:
+    def sumOfSeries(self, n):
+        if n == 0:
+            return n**3
+        else:
+            return (self.sumOfSeries(n - 1) + n**3)
+            #print(self.sumOfSeries(n - 1) + n**3) # can't print int + Nonetype
+```
+</td>
+
+<td>
+
+```py
+#using formula to calculate the sum of series     
+class Solution:
+    def sumOfSeries(self,n):
+        ans=(n*(n+1))**2//4
+        return ans
+```
+</td>
+
+</table>
+
+## Question 4:
+<table align="center">
+  <td><pre>Factorial of N numbers</pre></td>
+</table>
+
+## Solution:
+<table align="center">
+<td>
+
+```py
+# Using recursion
+class Solution:
+    def factorialNumbers(self, n):
+    	if n == 1:
+    	    return 1
+    	else:
+    	    return (n * self.factorialNumbers(n - 1))
+            
+f = Solution()
+print(f.factorialNumbers(3)) # Output: 6
+```
+</td>
+
+</table>

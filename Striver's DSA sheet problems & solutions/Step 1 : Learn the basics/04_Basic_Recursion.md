@@ -184,3 +184,80 @@ print(f.factorialNumbers(3)) # Output: 6
 </td>
 
 </table>
+
+## Question 5:
+<table align="center">
+  <td><pre>Reverse an array</pre></td>
+</table>
+
+## Solution:
+<table align="center">
+<td>
+
+```py
+# Using recursion
+def reversing(i, li, n):
+    if i >= n:
+        return None
+    li[i], li[n] = li[n], li[i]
+    reversing(i + 1, li, n - 1)
+    
+li = [1, 2, 3, 4, 'kk']
+reversing(0, li, len(li) - 1)
+print(li)
+```
+</td>
+
+</table>
+
+## Question 6:
+<table align="center">
+  <td><pre>Check if a string is palindrome or not</pre></td>
+</table>
+
+## Solution:
+<table align="center">
+<td>
+
+```py
+# Using recursion
+def reversing(arr, i = 0):
+    if i == len(arr)//2:
+        return True
+    elif arr[i] != arr[len(arr) - i - 1]:
+        return False
+    else:
+        return reversing(arr, i + 1)
+        ''' Here, the value of the function will return as True or False
+            But if you only call the funciton, None will be returned to the
+            first fuction that was called in the print() function.'''
+    
+arr = 'MADAM'
+print(reversing(arr))
+```
+</td>
+
+</table>
+
+## Question 7:
+<table align="center">
+  <td><pre>Fibonacci Number</pre></td>
+</table>
+
+## Solution:
+<table align="center">
+<td>
+
+```py
+# Using recursion
+def fibonacci(n): # n = nth fibonacci number
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+print(fibonacci(4)) # 4th fibonacci number = 3
+```
+</td>
+
+</table>

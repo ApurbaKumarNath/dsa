@@ -200,3 +200,42 @@ arr = [5, 3, 0, 1, 7]; recursive_insertion_sort(arr); print(arr)
 </td>
 
 </table>
+
+
+## Question 7:
+<table align="center">
+  <td><pre>Quick Sort</pre></td>
+</table>
+
+## Solution:
+<table align="center">
+<td>
+
+```py
+def partion_creator(arr, low, high):
+    partitionNum = arr[low]
+    i = low
+    j = high
+    while i < j:
+        while arr[i] <= partitionNum and i <= high:
+            i += 1
+        while arr[j] > partitionNum and j >= low:
+            j -= 1
+        if i < j:
+            arr[i], arr[j] = arr[j], arr[i]
+    arr[low], arr[j] = arr[j], arr[low]
+    return j
+    
+def quick_sort(arr, low = 0, high = None):
+    if high == None:
+        high = len(arr) - 1
+    if low < high:
+        partitionIndex = partion_creator(arr, low, high)
+        quick_sort(arr, low, partitionIndex - 1)
+        quick_sort(arr, partitionIndex + 1, high)
+    
+arr = [4, 6, 2, 5, 7, 9, 1, 3]; quick_sort(arr); print(arr)
+```
+</td>
+
+</table>

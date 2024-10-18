@@ -142,3 +142,61 @@ print(arr)
 </td>
 
 </table>
+
+
+## Question 5:
+<table align="center">
+  <td><pre>Recursive Bubble Sort</pre></td>
+</table>
+
+## Solution:
+<table align="center">
+<td>
+
+```py
+def recursive_bubble_sort(arr, lastIndex = None):
+    if lastIndex == None:
+        lastIndex = len(arr) - 1
+    if lastIndex == 0:
+        return
+    for i in range(lastIndex): # i for index
+        if arr[i] > arr[i + 1]:
+            arr[i], arr[i + 1] = arr[i + 1], arr[i]
+            
+    recursive_bubble_sort(arr, lastIndex - 1)
+    
+arr = [5, 3, 0, 1, 7]; recursive_bubble_sort(arr); print(arr)
+```
+</td>
+
+</table>
+
+
+## Question 6:
+<table align="center">
+  <td><pre>Recursive Insertion Sort</pre></td>
+</table>
+
+## Solution:
+<table align="center">
+<td>
+
+```py
+def recursive_insertion_sort(arr, low = 0, high = None):
+    if high == None:
+        high = len(arr) - 1
+    if low == high:
+        return
+    
+    check = low
+    while check > 0 and arr[check - 1] > arr[check]:
+        arr[check], arr[check - 1] = arr[check - 1], arr[check]
+        check -= 1
+            
+    recursive_insertion_sort(arr, low + 1)
+    
+arr = [5, 3, 0, 1, 7]; recursive_insertion_sort(arr); print(arr)
+```
+</td>
+
+</table>

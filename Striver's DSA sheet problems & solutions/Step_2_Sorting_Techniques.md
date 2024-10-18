@@ -88,7 +88,10 @@ print(arr)
 <td>
 
 ```py
-# Divide and Merge   
+# Divide and Merge
+
+
+# Merging part: 
 def merge(arr, low, mid, high):
     temp = []
     left = low

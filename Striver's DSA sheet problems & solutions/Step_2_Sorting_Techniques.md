@@ -217,9 +217,9 @@ def partion_creator(arr, low, high):
     i = low
     j = high
     while i < j:
-        while arr[i] <= partitionNum and i <= high:
+        while arr[i] <= partitionNum and i <= high - 1:
             i += 1
-        while arr[j] > partitionNum and j >= low:
+        while arr[j] > partitionNum and j >= low + 1:
             j -= 1
         if i < j:
             arr[i], arr[j] = arr[j], arr[i]

@@ -1,6 +1,0 @@
-100
-calculate 12 * 10
-2 3 4 5 6
-44
-11
-ShonarBangla will departure for Dhaka at 12:30

@@ -1,9 +1,5 @@
-N, K = input().split()
-N, K = int(N), int(K)
+N, K = map(int, input().split())
 
 numbers = input().split()
-for i in range(len(numbers)):
-    numbers[i] = int(numbers[i])
 
-for j in range(K-1, -1, -1):
-    print(numbers[j], end = ' ')
+print(' '.join(numbers[K-1: -len(numbers) - 1: -1]))

@@ -20,13 +20,8 @@ def selection_sort_id_mark(id_arr, mark_arr):
         print(f'ID: {id_arr[i]} Mark: {mark_arr[i]}')
 
 N = int(input())
-id_arr = input().split()
-mark_arr = input().split()
+id_arr = list(map(int, input().split()))
+mark_arr = list(map(int, input().split()))
+
 if len(id_arr) == N:
-    for i in range(N):
-        id_arr[i] = int(id_arr[i])
-
-    for i in range(N):
-        mark_arr[i] = int(mark_arr[i])
-
     selection_sort_id_mark(id_arr, mark_arr)

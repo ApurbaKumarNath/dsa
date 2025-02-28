@@ -8,15 +8,10 @@ def bubbleSort(arr):
         if not swapped:
             break
     
-    return arr
-
+    print(' '.join(map(str, arr)))
+    
 N = int(input())
 
-numbers = input().split()
+numbers = list(map(int, input().split()))
 if len(numbers) == N:
-    for i in range(len(numbers)):
-        numbers[i] = int(numbers[i])
-
-    sorted_arr = bubbleSort(numbers)
-    for i in range(len(sorted_arr)):
-        print(sorted_arr[i], end=' ')
+    bubbleSort(numbers)

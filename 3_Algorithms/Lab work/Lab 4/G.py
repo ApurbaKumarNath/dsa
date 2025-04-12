@@ -8,7 +8,6 @@ for i in range(1, n + 1):
         if math.gcd(i, j) == 1:
             adj_list[i].append(j)
             adj_list[j].append(i)
-    adj_list[i].sort() # sorting it to find k-th smallest neighbor
 
 for _ in range(q):
     x, k = map(int, input().split())

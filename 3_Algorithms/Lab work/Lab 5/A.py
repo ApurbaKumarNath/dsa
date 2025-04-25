@@ -1,3 +1,11 @@
+'''
+Can you Traverse-1?
+You are given an undirected unweighted graph with N cities and M roads. The cities are numbered from 1 to N. 
+You may assume, the graph is connected, meaning there is a path between any pair of cities. There are no self-loops 
+(no road connects a city to itself) and no multiple edges between the same pair of cities.
+Your task is to perform a Breadth-First Search (BFS) starting from node 1 and print the order in which the nodes are visited.
+'''
+
 from collections import deque
 
 n, m = map(int, input().split())

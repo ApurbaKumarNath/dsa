@@ -1,3 +1,13 @@
+'''
+The King of Königsberg
+
+You are given an N∗N
+chessboard and the initial position (x,y) of a King piece. The King can move one step in any of the 8 possible directions: 
+Up, Down, Left, Right, Top-left diagonal, Top-right diagonal, Bottom-left diagonal, Bottom-right diagonal.
+
+Your task is to determine the number of valid moves the King can make in one move. A move is valid if it remains inside the board.
+'''
+
 n = int(input())
 r, c = map(int, input().split()) # rows, columns = king's position; 1-indexed
 # The king can move to any of the 8 surrounding squares

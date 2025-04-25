@@ -1,3 +1,10 @@
+'''
+Through the Jungle
+You are given a directed unweighted graph with N nodes and M edges. The nodes are numbered from 1 to N. The graph contains no self-loops or multiple edges.
+You have to find a shortest path from node S to node D that passes through node K. If multiple such paths exist, print any one of them. 
+If no such path exists, print −1.
+'''
+
 from collections import deque
 def solve():
     N, M, S, D, K = map(int, input().split()) # N = no. of vertices, M = no. of edges, S = start node, D = destination node, K = one node between S and D

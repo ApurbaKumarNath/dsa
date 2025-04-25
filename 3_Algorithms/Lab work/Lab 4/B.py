@@ -1,3 +1,9 @@
+'''
+Adjacency List Representation
+You are given a directed weighted graph with N nodes and M edges. The nodes are numbered from 1 to N. Each edge represents a 
+direct connection between two nodes. There is no self loop or multi edge.
+'''
+
 n, m = map(int, input().split())
 if m > 0:
     u_nodes, v_nodes, w_nodes = list(map(int, input().split())), list(map(int, input().split())), list(map(int, input().split()))

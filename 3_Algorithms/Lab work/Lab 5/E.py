@@ -1,3 +1,10 @@
+'''
+Cycle Detection
+You are given a directed unweighted graph with N nodes and M edges. The nodes are numbered from 1 to N. The graph contains no self-loops 
+or multiple edges.
+Write a code to find if there is any cycle in the graph.
+'''
+
 import sys
 sys.setrecursionlimit(2*10**5 + 10)
 

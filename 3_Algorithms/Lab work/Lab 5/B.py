@@ -1,3 +1,10 @@
+'''
+Can you Traverse-2?
+You are given an undirected unweighted graph with N cities and M roads. The cities are numbered from 1 to N. The graph is connected, 
+and contains no self-loops or multiple edges.
+Your task is to perform a Depth-First Search (DFS) starting from node 1 and print the order in which the nodes are visited.
+'''
+
 import sys
 sys.setrecursionlimit(2*10**5 + 10)
 

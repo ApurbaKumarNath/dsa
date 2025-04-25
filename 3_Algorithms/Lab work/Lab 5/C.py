@@ -1,3 +1,14 @@
+'''
+Lightning McQueen
+You are given an undirected unweighted graph with N nodes and M edges. The nodes are numbered from 1 to N. 
+The graph contains no self-loops or multiple edges.
+There is a source and a destination. Your task is to find the shortest distance from the source node to destination node and 
+print the path taken. If multiple shortest paths exist, print the one that is lexicographically smallest.
+A path P1=[a1,a2,…an] is lexicographically smaller than a path P2=[b1,b2,…bm] if at the first position where they differ, ai<bi. 
+For example, [1,4,3] is smaller than [1,5,7,1].
+If no path exists, print −1.
+'''
+
 from collections import deque
 def solve():
     n, m, s, dn = map(int, input().split()) # n = no. of vertices, m = no. of edges, s = start node, dn = destination node

@@ -6,6 +6,7 @@ You may assume, the graph is connected, meaning there is a path between any pair
 Your task is to perform a Breadth-First Search (BFS) starting from node 1 and print the order in which the nodes are visited.
 '''
 
+
 from collections import deque
 
 n, m = map(int, input().split())

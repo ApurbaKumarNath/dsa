@@ -12,7 +12,6 @@ then find any such path. Do everything in O(N*M) time.
 (1,1) (2,1) (3,1) (3,2) (3,3)
 '''
 
-
 from collections import deque
 
 def solve():

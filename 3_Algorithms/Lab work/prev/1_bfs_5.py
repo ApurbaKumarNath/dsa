@@ -18,7 +18,6 @@ output:
 1 2 1
 0 1 0
 '''
-
 from collections import deque
 
 def solve():

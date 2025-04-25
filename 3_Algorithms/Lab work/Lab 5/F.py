@@ -11,6 +11,7 @@ You may start from any non-obstacle cell and move in the four directions: up, do
 such that you can collect the maximum number of diamonds
 '''
 
+
 from collections import deque
 
 R, H = map(int, input().split()) # R= rows, H=columns

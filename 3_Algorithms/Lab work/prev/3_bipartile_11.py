@@ -5,6 +5,7 @@ A and B. Find if it is possible to assign each node any of these two colors such
 possible then find any such coloring. Do everything in O(N+M) time.
 '''
 
+
 from collections import deque
 
 def solve():

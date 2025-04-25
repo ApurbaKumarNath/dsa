@@ -13,6 +13,7 @@ you can collect the maximum amount of gold.
 2 4
 5 6
 5 7
+
 '''
 
 # No need for color array in tree DFS if we pass the parent

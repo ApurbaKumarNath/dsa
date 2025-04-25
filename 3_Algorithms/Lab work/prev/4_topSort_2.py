@@ -4,6 +4,7 @@ Now you have to find the order of the alphabet that satisfies the lexicographic 
 you may print any one of those.
 '''
 
+
 from collections import deque, defaultdict
 
 def solve():

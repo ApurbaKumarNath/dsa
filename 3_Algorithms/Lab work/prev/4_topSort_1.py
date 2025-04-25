@@ -4,6 +4,7 @@ largest permutation of the N integers such that for each of the rules (X[i], Y[i
 such permutation then detect that.
 '''
 
+
 import heapq # heapq implements a min-heap, we'll use negative values for max-heap behavior
 
 def solve():

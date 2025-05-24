@@ -4,6 +4,6 @@
 - [All of Algorithms](https://github.com/ApurbaKumarNath/dsa/tree/44fe5f39822d127fb9194cdf6358fabf455acde0/3_Algorithms/Lab%20work)
 
 ## For ease of use:
-- View my codes using online VS Code: https://apurbakumarnath.github.io/dsa/
+- View my codes using online VS Code–style interface: https://apurbakumarnath.github.io/dsa/
 
 - The link to this repository: https://github.com/ApurbaKumarNath/dsa

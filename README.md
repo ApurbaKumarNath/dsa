@@ -9,7 +9,7 @@
 - The link to this repository: https://github.com/ApurbaKumarNath/dsa
 
 ## Topics I learned:
-- Data Structures:
+- **Data Structures**:
   - 1D & 2D Arrays
   - Linked Lists
   - Stacks
@@ -18,7 +18,8 @@
   - Binary Trees & Binary Search Trees
   - Heaps
   - Graphs
-- Algorithms:
+    
+- **Algorithms**:
   - Time & Space Complexities and Asymptotic Notations
   - Binary & Ternary Search
   - Bubble, Insertion, Selection, Count, Merge, and Quick Sorts

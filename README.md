@@ -7,3 +7,25 @@
 - View my codes using online VS Code–style interface: https://apurbakumarnath.github.io/dsa/
 
 - The link to this repository: https://github.com/ApurbaKumarNath/dsa
+
+## Topics I learned:
+- Data Structures:
+  - 1D & 2D Arrays
+  - Linked Lists
+  - Stacks
+  - Queues
+  - Hashing
+  - Binary Trees & Binary Search Trees
+  - Heaps
+  - Graphs
+- Algorithms:
+  - Time & Space Complexities and Asymptotic Notations
+  - Binary & Ternary Search
+  - Bubble, Insertion, Selection, Count, Merge, and Quick Sorts
+  - Max-sum subarray
+  - Karatsuba multiplication
+  - substitution method & master theorem
+  - Graph theory: BFS, DFS, Topological Sort, SCC, Dijkstra's algorithm
+  - MST: Kruskal's (+DSU)
+  - Greedy: Huffman encoding
+  - Dynamic Programming: LCS, Fractional & 0-1 Knapsack.
